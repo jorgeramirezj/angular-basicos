@@ -10,6 +10,7 @@ import { HeroesModule } from './heroes/heroes.module';
 // hacer: declaraciones y exportaciones
 // LISTO => OK Tarea
 import { ContadorModule } from './contador/contador.module';
+import { DbzModule } from './dbz/dbz.module';
 
 
 // AQUI ESTAN LOS MODULOS DE LA APLICACIÓN
@@ -23,7 +24,8 @@ import { ContadorModule } from './contador/contador.module';
     BrowserModule,
     // Importamos nuestro modulo que contiene los componentes
     HeroesModule,
-    ContadorModule
+    ContadorModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]

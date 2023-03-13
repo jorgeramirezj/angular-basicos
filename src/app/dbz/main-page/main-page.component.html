@@ -1,0 +1,26 @@
+<p>Dragon Ball Z</p>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!--
+            Esta llamando a otro componente
+            [personajes] => estamos enviando a otro componente la data
+        -->
+        <!--<app-personajes [data]="personajes"></app-personajes>-->
+        <app-personajes></app-personajes>
+    </div>
+
+    <!-- TWO-WAY DATA BINDING -->
+    <div class="col">
+        <!--<app-agregar 
+            [nuevo]="nuevo"
+            (onNuevoPersonaje)="agregaNuevoPersona($event)"
+        ></app-agregar>-->
+        <app-agregar 
+            [nuevo]="nuevo"
+        ></app-agregar>
+    </div>
+</div>
+
+
