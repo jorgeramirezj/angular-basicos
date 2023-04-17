@@ -1,4 +1,3 @@
-
 <h1>{{nombre}}</h1>
 
 <!-- dl => description list -->
@@ -18,10 +17,14 @@
 
 </dl>
 
-<button (click)="cambiarNombre()">
+<button *ngIf="nombre !== 'Spiderman'" (click)="cambiarNombre()">
     Cambiar Héroe
 </button>
 
-<button (click)="cambiarEdad()">
+<button *ngIf="edad !== 30" (click)="cambiarEdad()">
     Cambiar Edad
+</button>
+
+<button (click)="resetForm()">
+    Reset Form
 </button>

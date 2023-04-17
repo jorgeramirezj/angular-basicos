@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
     ],
     // que cosas quieron que sean visibles fuera de este modulo
     exports: [
+        HeroeComponent,
         ListadoComponent
     ],
     // aqui van modulos

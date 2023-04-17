@@ -12,6 +12,7 @@ import {Component} from '@angular/core'
 
     <button (click)="acumular(-base)"> - {{base}} </button>
     <!--<button (click)="numero = numero - 1;"> - 1 </button>-->
+    <button (click)="resetCounter()"> Reset </button>
     `
 })
 export class ContadorComponent {
@@ -33,6 +34,10 @@ export class ContadorComponent {
     restar(){
         this.numero -= 1;
     }*/
+
+    resetCounter() {
+        this.numero = 10;
+    }
 
 
 }

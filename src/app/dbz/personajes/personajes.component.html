@@ -1,8 +1,28 @@
 <h3>Personajes</h3>
 <hr>
-<ul>
-    <li *ngFor="let personaje of personajes">
+<ul class="list-group">
+    <li *ngFor="
+        let personaje of personajes; 
+        let i = index; 
+        let isFirst = first; 
+        let isLast = last;
+        let isEven = even;
+        let isOdd = odd;
+        "
+    class="list-group-item"
+    [ngClass]="{
+        'list-group-item-dark': isLast,
+        'list-group-item-danger': isEven
+    }">
         <!-- <propiedad> | <tipo-dato> => ayuda a entender que la propiedad tendrá un tipo de dato especifico -->
-        {{personaje.nombre}} - {{personaje.poder | number}}
+        <span>{{i+1}}.</span>
+        <span>{{personaje.nombre}} - </span>
+        <strong>Power: </strong>
+        <span>{{personaje.poder | number}}</span>
+        <br>
+        <span>Es el primero: {{ isFirst }}</span><br>
+        <span>Es el último: {{ isLast }}</span><br>
+        <span>Es Par ({{i}}): {{ isEven }}</span><br>
+        <span>Es Impar ({{i}}): {{ isOdd }}</span><br>
     </li>
 </ul>

@@ -8,6 +8,7 @@ import { AgregarComponent } from './agregar/agregar.component';
 import { DbzService } from './_services/dbz.service';
 
 @NgModule({
+  // Debemos declararlo pero tambien debemos Exportarlo
   declarations: [
     MainPageComponent,
     PersonajesComponent,
